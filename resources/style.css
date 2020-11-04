@@ -15,6 +15,7 @@ html {
 
 .sec {
     width: 100%;
+
 }
 
 .roboto {
@@ -234,6 +235,26 @@ footer {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    .container {
+        padding: 0;
+        max-width: 500px;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {
+        padding: 0;
+        max-width: 700px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        padding: 0;
+        max-width: 900px;
+    }
     html {
         font-size: 100%;
     }
@@ -297,22 +318,31 @@ footer {
         align-items: center;
         justify-content: space-between;
     }
-}
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+    .sm-btn svg path:hover {
+        fill: #25E6C8;
+    }
+    .banner-btn:hover {
+        background-color: #2BAAEC;
+        cursor: pointer;
+    }
 
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-
+    .service-obj:hover #icon_background { 
+        fill: #2BAAEC; 
+    }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .container {
         padding: 0;
+        max-width: 1150px;
+    }
+}
+
+@media (min-width: 1300px) { 
+    .container {
+        padding: 10px;
         max-width: 1300px;
     }
 }
